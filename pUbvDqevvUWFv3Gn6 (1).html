@@ -1,0 +1,163 @@
+<html><head><base href="https://teamkakashi.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Kakashi - Growing Together</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header h1 {
+            margin: 0;
+            text-align: center;
+            font-size: 2.5em;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .team-member {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+        .team-member h3 {
+            margin-top: 0;
+            color: #e8491d;
+        }
+        .whatsapp {
+            color: #25D366;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .owner {
+            background-color: #ffd700;
+            border: 2px solid #e8491d;
+        }
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .team-member {
+            animation: fadeIn 0.5s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Team Kakashi</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Meet Our Team</h2>
+        <p>We are dedicated to helping each other grow and develop our individual skills.</p>
+        
+        <div class="team-grid">
+            <div class="team-member owner">
+                <h3>Mr. Arslan</h3>
+                <p><strong>Role:</strong> Owner of the Team</p>
+                <p><a href="https://wa.me/923035171619" class="whatsapp">WhatsApp: +92 303 5171619</a></p>
+            </div>
+            
+            <div class="team-member">
+                <h3>Xtreme Graphix</h3>
+                <p><strong>Skills:</strong> Graphic Designer, Video Editor, and Picture Editor</p>
+                <p><a href="https://wa.me/2348061952633" class="whatsapp">WhatsApp: +234 806 195 2633</a></p>
+            </div>
+            
+            <div class="team-member">
+                <h3>Mr. Shellah</h3>
+                <p><a href="https://wa.me/27746184894" class="whatsapp">WhatsApp: +27 74 618 4894</a></p>
+            </div>
+            
+            <div class="team-member">
+                <h3>Unknown</h3>
+                <p><a href="https://wa.me/2348123124998" class="whatsapp">WhatsApp: +234 812 312 4998</a></p>
+            </div>
+            
+            <div class="team-member">
+                <h3>Daddy Haki</h3>
+                <p><a href="https://wa.me/2349112171078" class="whatsapp">WhatsApp: +234 911 217 1078</a></p>
+            </div>
+            
+            <div class="team-member">
+                <h3>DOY</h3>
+                <p><a href="https://wa.me/233257938281" class="whatsapp">WhatsApp: +233 25 793 8281</a></p>
+            </div>
+            
+            <div class="team-member">
+                <h3>Shiii</h3>
+                <p><a href="https://wa.me/2347068110998" class="whatsapp">WhatsApp: +234 706 811 0998</a></p>
+            </div>
+            
+            <div class="team-member">
+                <h3>Ven Gaara</h3>
+                <p><a href="https://wa.me/2349060631426" class="whatsapp">WhatsApp: +234 906 063 1426</a></p>
+            </div>
+            
+            <div class="team-member">
+                <h3>Ziddi Hun Yara</h3>
+                <p><a href="https://wa.me/923319863027" class="whatsapp">WhatsApp: +92 331 9863027</a></p>
+            </div>
+            
+            <div class="team-member">
+                <h3>Samson</h3>
+                <p><a href="https://wa.me/2349153355436" class="whatsapp">WhatsApp: +234 915 335 5436</a></p>
+            </div>
+            
+            <div class="team-member">
+                <h3>Ali</h3>
+                <p><a href="https://wa.me/923355417024" class="whatsapp">WhatsApp: +92 335 5417024</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Team Kakashi. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const teamMembers = document.querySelectorAll('.team-member');
+            teamMembers.forEach((member, index) => {
+                member.style.animationDelay = `${index * 0.1}s`;
+            });
+        });
+    </script>
+</body>
+</html>
